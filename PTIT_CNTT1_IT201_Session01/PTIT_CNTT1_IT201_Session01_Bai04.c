@@ -2,7 +2,7 @@
 #include<string.h>
 #include<math.h>
 #include<stdlib.h>
-//cách 1: độ phức tạp thời gian: O(log n)
+//cách 1: độ phức tạp khong gian: O(1)
 int calTotalFromOne(int n){
    int total = 0;
    int i = 1;
@@ -12,7 +12,7 @@ int calTotalFromOne(int n){
    }
    return total;
 }
-//cách 2: độ phức tạp thời gian: O(1)
+//cách 2: độ phức tạp khong gian: O(1)
 int optimalCalTotalFromOne(int n){
    return n * (n+1)/2;
 }

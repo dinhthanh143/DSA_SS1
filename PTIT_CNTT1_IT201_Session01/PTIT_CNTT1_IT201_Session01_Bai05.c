@@ -19,3 +19,4 @@ int main(){
    return 0;
 }
 //độ phức tạp thời gian: O(n²)
+//độ phức tạp không gian : O(1)

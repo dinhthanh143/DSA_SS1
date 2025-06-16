@@ -5,7 +5,7 @@
 int main(){
    int arr[10] = {1,2,4,2,1,3,5,5,7,4};
 
-   //cach 1: độ phức tạp thời gian: O(n²)
+   //cach 1: độ phức tạp thời gian: O(n²), độ phức tạp không gian : O(1)
    for (int i =0; i<sizeof(arr)/sizeof(arr[0]); i++) {
       int count = 0;
          for (int j = 0; j<sizeof(arr)/sizeof(arr[0]); j++) {
@@ -21,7 +21,7 @@ int main(){
    }
 
 
-   //cach 2: độ phức tạp thời gian: O(n+max)
+   //cach 2: độ phức tạp thời gian: O(n+max), độ phức tạp không gian : O(max)
 
    int max = arr[0];
    for (int i = 0; i<sizeof(arr)/sizeof(arr[0]); i++) {

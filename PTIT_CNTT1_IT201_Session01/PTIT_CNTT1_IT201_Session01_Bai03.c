@@ -12,4 +12,4 @@ int main(){
    }
    return 0;
 }
-//độ phức tạp thời gian: o(n)
+//độ phức tạp khong gian: o(n)

@@ -5,7 +5,7 @@
 int main(){
    int arr[10] = {1,2,1,2,1,3,5,5,7,4};
    int maxCount = 0;
-   int index;
+   int index = 0;
    int i = 0;
    for (i =0; i<sizeof(arr)/sizeof(arr[0]); i++) {
       int check = 0;
@@ -20,10 +20,7 @@ int main(){
       }
       int count = 0;
       for (int j = 0; j<sizeof(arr)/sizeof(arr[0]); j++) {
-         if (i==0 && arr[j] == arr[i]) {
-            maxCount++;
-            index = i;
-         }else if (arr[j] == arr[i]) {
+          if (arr[j] == arr[i]) {
             count++;
          }
       }
@@ -37,3 +34,4 @@ int main(){
 }
 
 //độ phức tạp thời gian: O(n²)
+//độ phức tạp không gian : O(1)
